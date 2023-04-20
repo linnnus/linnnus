@@ -7,6 +7,10 @@ on:
     # Run at 5:30 every day.
     - cron: '30 5 * * *'
 
+# Needs to push changes.
+permissions:
+  contents: write
+
 jobs:
   build:
     # TODO: Does this make sense?
