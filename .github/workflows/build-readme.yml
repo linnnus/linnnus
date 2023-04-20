@@ -1,0 +1,44 @@
+name: Build README
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 0 ? * *'
+
+jobs:
+  build:
+    # TODO: Does this make sense?
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+      - name: Set up Pip caching
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+      - name: Install Python dependencies
+        run: |
+          python3 -m pip install -r requirements.txt
+      - name: Generate README
+        run: |
+          python3 build_readme.py
+          cat README.md >> $GITHUB_OUTPUT
+      - name: Commit and push if changed
+        run:
+          # Save the diff so we can see what changes have been made.
+          git diff >> $GITHUB_OUTPUT
+
+          # Set info
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "README-bot"
+
+          # Commit & exit if nothing to be done.
+          git add -A
+          git commit -m "Updated content" || exit 0
+
+          # Push commit.
+          git push
