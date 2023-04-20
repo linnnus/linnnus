@@ -31,6 +31,8 @@ jobs:
           python3 build_readme.py
       - name: Commit and push if changed
         run: |
+          # fuck fuck lor
+          git status
           # Save the diff so we can see what changes have been made.
           git diff
           # Set info for commti
