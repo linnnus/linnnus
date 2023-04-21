@@ -1,9 +1,14 @@
-# Linus
+# linnnus
 
-That's me.
+i am linus. that's me.
 
-## Meta info
+my latest commit is
 
-Python version: 3.10.11
+```
+update beep booop eeeb
+```
 
-Date: 2023-04-21 05:31:59.172549
+## Meta
+
+This README was automatically generated on `fv-az1107-994` using Python
+`3.10.11` at `2023-04-21 15:17:58.443148`.
