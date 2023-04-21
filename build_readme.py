@@ -1,9 +1,38 @@
 import datetime
 import platform
+import github
+
+# fetch latest commit message
+try:
+    client = github.Github()
+    user = client.get_user("linnnus")
+    user_events = user.get_events()
+    first_push = next(filter(lambda e: e.type == "PushEvent" and e.payload["commits"], user_events))
+    first_commit_msg = first_push.payload["commits"][0]["message"]
+except Exception as e:
+    print("HALÅÅÅÅ:", repr(e))
+    first_commit_msg = "<not found>"
+
+# fetch info for meta section
+computer = platform.uname().node
+python_version = platform.python_version()
+build_time = datetime.datetime.now()
+
+content = f"""# linnnus
+
+i am linus. that's me.
+
+my latest commit is
+
+```
+{first_commit_msg}
+```
+
+## Meta
+
+This README was automatically generated on `{computer}` using Python
+`{python_version}` at `{build_time}`.
+"""
 
 with open("README.md", "wt") as f:
-    print("# Linus\n", file=f)
-    print("That's me.\n", file=f)
-    print("## Meta info\n", file=f)
-    print(f"Python version: {platform.python_version()}\n", file=f)
-    print(f"Date: {datetime.datetime.now()}", file=f)
+    f.write(content)
