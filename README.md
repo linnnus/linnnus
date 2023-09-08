@@ -5,12 +5,13 @@ i am linus. that's me.
 my latest commit is
 
 ```
-"Update" requirements.txt
+build: Don't extract author's name from Git
 
-Forgot to remove dependency in 1a25f03a887d5e114fbf15cc2f36754001bb8607
+This was forcing my systemd service to run as my user account and didn't
+even produce good results; my name is Linus not Linnnus.
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az256-450` using Python
-`3.10.12` at `2023-09-07 05:32:00.272278`.
+This README was automatically generated on `fv-az437-489` using Python
+`3.10.13` at `2023-09-08 05:31:43.448649`.
