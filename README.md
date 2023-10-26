@@ -5,10 +5,10 @@ i am linus. that's me.
 my latest commit is
 
 ```
-content: Clearer formulation, etc. in index-redirection
+content: Add edit-in-neovim
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az341-462` using Python
-`3.10.13` at `2023-10-25 05:32:16.134702`.
+This README was automatically generated on `fv-az177-113` using Python
+`3.10.13` at `2023-10-26 05:32:05.567520`.
