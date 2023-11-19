@@ -5,10 +5,10 @@ i am linus. that's me.
 my latest commit is
 
 ```
-content: Oops forgot to uncomment post list
+content: Add issue link to index
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az711-229` using Python
-`3.10.13` at `2023-11-18 05:32:02.227343`.
+This README was automatically generated on `fv-az523-284` using Python
+`3.10.13` at `2023-11-19 05:31:49.742892`.
