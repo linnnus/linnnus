@@ -5,15 +5,10 @@ i am linus. that's me.
 my latest commit is
 
 ```
-Updrage to nixpkgs 23.11
-
-This was pretty clean as far as Nix+Python goes.
-Had to disable tests which is weird because I don't have any.
-It's probably a bad idea but I just don't was to spend anymore time on
-this project than is strictly necessary.
+content: Add libgit2-blob-as-file
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az1014-389` using Python
-`3.10.13` at `2023-12-25 05:31:57.642709`.
+This README was automatically generated on `fv-az1535-841` using Python
+`3.10.13` at `2023-12-26 05:32:06.211563`.
