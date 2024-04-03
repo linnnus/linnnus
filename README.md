@@ -5,13 +5,18 @@ i am linus. that's me.
 my latest commit is
 
 ```
-Add prefferred role to application form
+Add basic client-side validation to join-form
 
-As noted in the notes added in bb41850 each user generally plays as a
-single role. This is relevant for the application process.
+This patch adds some basic form-validation to the HTML for the join
+page, namely making every input `required`.
+
+I also took this opportunity to ensure the top-most option for roles
+(DPS) isn't auto-selected. That could lead to some applicants skipping
+the input field, since it's already filled with a (potentially wrong)
+value.
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az1433-72` using Python
-`3.10.14` at `2024-04-02 05:31:46.170431`.
+This README was automatically generated on `fv-az1198-695` using Python
+`3.10.14` at `2024-04-03 05:32:24.506629`.
