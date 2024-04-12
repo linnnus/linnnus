@@ -5,13 +5,13 @@ i am linus. that's me.
 my latest commit is
 
 ```
-chore: Rewrite readme as markdown
+Add missing oauth dependency
 
-I'll be uploading the project to GitHub soon. GitHub renders Markdown
-nicely.
+Commit 58e2a2d added some initial oauth code but forgot to add the
+required dependencies to requirements.txt
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az985-19` using Python
-`3.10.14` at `2024-04-11 05:31:51.117275`.
+This README was automatically generated on `fv-az1245-596` using Python
+`3.10.14` at `2024-04-12 05:33:20.778819`.
