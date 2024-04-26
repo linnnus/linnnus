@@ -5,10 +5,14 @@ i am linus. that's me.
 my latest commit is
 
 ```
-Add self-signed certificates
+fix: Add missing rependencies
+
+The changes introduced in 45a7c91fbef2e9c2c0c6821edb06bae75077b50c rely
+on using gunicorn instead of the default wsgi server. This patch makes
+sure that package is added to the list of requrements.
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az1429-585` using Python
-`3.10.14` at `2024-04-25 05:31:58.597541`.
+This README was automatically generated on `fv-az1022-986` using Python
+`3.10.14` at `2024-04-26 05:33:33.690865`.
