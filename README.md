@@ -5,10 +5,15 @@ i am linus. that's me.
 my latest commit is
 
 ```
-fix: Correctly disable spellchecking in <ass-mirror/>
+Avoid overscroll on editor page
+
+Prior to this commit, if you scrolled on the navigation bar at the top
+of the editor screen, it'd do that little overscrolling thing which
+browsers do when you try to scroll past the end of a page. This felt
+super weird because we normally don't scroll this page at all.
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az2036-793` using Python
-`3.10.14` at `2024-09-17 05:34:55.077878`.
+This README was automatically generated on `fv-az1391-494` using Python
+`3.10.14` at `2024-09-18 05:36:19.174546`.
