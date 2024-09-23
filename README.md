@@ -5,15 +5,15 @@ i am linus. that's me.
 my latest commit is
 
 ```
-Avoid overscroll on editor page
+Set SameSite=Lax for secret cookies
 
-Prior to this commit, if you scrolled on the navigation bar at the top
-of the editor screen, it'd do that little overscrolling thing which
-browsers do when you try to scroll past the end of a page. This felt
-super weird because we normally don't scroll this page at all.
+The bug supposedly fixed in 72985036 seems to have been caused by
+SameSite=Strict being set on the cookie. This meant that the cookie
+wasn't being sent when I was following one of my own links on
+<http://cohost.org> (another Site).
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az891-302` using Python
-`3.10.15` at `2024-09-22 05:35:17.797234`.
+This README was automatically generated on `fv-az1567-438` using Python
+`3.10.15` at `2024-09-23 05:37:21.921557`.
