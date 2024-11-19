@@ -5,19 +5,12 @@ i am linus. that's me.
 my latest commit is
 
 ```
-lib.generators.toPlist: Make escaping optional as per PR comment
+lib.generators.plist: Update warning as per PR comment
 
-As discussed, this patch makes the following changes:
-
-1. Escaping is only done when called with `{ escape = true; }`.
-2. A warning is emitted if `{ escape = false; }`
-3. Escaping is disabled by default, retaining backwards compatibility.
-
-I have also added a test case for both the escaped and non-escaped
-usage.
+Co-authored-by: Bruno BELANYI <bruno@belanyi.fr>
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az1789-205` using Python
-`3.10.15` at `2024-11-18 05:38:44.606755`.
+This README was automatically generated on `fv-az1110-954` using Python
+`3.10.15` at `2024-11-19 05:37:37.294232`.
