@@ -5,18 +5,22 @@ i am linus. that's me.
 my latest commit is
 
 ```
-Fix relative includes with -I
+lib.generators.toPlist: escape XML syntax in strings & keys
 
-Since we're passing the source file to CC over stdin, #include paths are
-resolved relative to CWD rather the location of the source file.
+Before this patch, code like this would break generate invalid XML:
 
-This is pretty unintuitive, so to mitigate it, this patch adds the
-directory of the source file to the include path with -I.
+    lib.generators.toPlist {} "ab<cd"
 
-I also use i++ pattern to avoid fucking up.
+That's obviously bad, since the call to toPlist often happens through
+indirection, as is the case in e.g. the nix-darwin project. A user might
+not realize that they have to escape the strings.
+
+This patch adds the argument 'escape' to lib.generators.plist and emits
+a warning if it is not set to true. In a future release, this behavior
+should become the default.
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az1456-311` using Python
-`3.10.15` at `2024-11-23 05:37:44.443513`.
+This README was automatically generated on `fv-az842-847` using Python
+`3.10.15` at `2024-11-24 05:36:53.298192`.
