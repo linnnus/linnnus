@@ -5,10 +5,13 @@ i am linus. that's me.
 my latest commit is
 
 ```
-muhammed: Add ahmed as remote x86_64-linux builder
+build: Don't hardcode tcl version
+
+8.5 wasn't building correctly on nixpkgs@24.11pre-git and I don't really
+care so whatever.
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az1429-301` using Python
-`3.10.15` at `2024-12-07 05:37:46.124793`.
+This README was automatically generated on `fv-az1153-458` using Python
+`3.10.15` at `2024-12-08 05:37:23.480734`.
