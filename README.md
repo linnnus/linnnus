@@ -5,10 +5,10 @@ i am linus. that's me.
 my latest commit is
 
 ```
-Move shared nix{os,-darwin} config to shared/nixos-and-darwin
+Add new host omar
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az665-742` using Python
-`3.10.15` at `2024-12-27 05:36:10.826942`.
+This README was automatically generated on `fv-az1542-665` using Python
+`3.10.15` at `2024-12-28 05:35:18.680501`.
