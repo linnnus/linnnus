@@ -5,10 +5,10 @@ i am linus. that's me.
 my latest commit is
 
 ```
-dbus-cpp: pin Boost 1.86
+Enable sandbox on Darwin (with some caveats)
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az700-461` using Python
-`3.10.16` at `2025-01-19 05:33:26.623250`.
+This README was automatically generated on `fv-az885-122` using Python
+`3.10.16` at `2025-01-20 05:35:44.894993`.
