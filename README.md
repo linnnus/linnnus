@@ -10,5 +10,5 @@ pkgs/mcping: Print usage to stderr
 
 ## Meta
 
-This README was automatically generated on `fv-az740-792` using Python
-`3.10.16` at `2025-02-12 05:36:08.057830`.
+This README was automatically generated on `fv-az1501-845` using Python
+`3.10.16` at `2025-02-13 05:35:43.498816`.
