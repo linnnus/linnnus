@@ -5,10 +5,10 @@ i am linus. that's me.
 my latest commit is
 
 ```
-Add man pages to C dev
+TEMPORARY HACK allow access to media over https
 ```
 
 ## Meta
 
-This README was automatically generated on `fv-az1788-67` using Python
-`3.10.17` at `2025-04-19 05:38:13.492475`.
+This README was automatically generated on `fv-az661-988` using Python
+`3.10.17` at `2025-04-20 05:37:53.984073`.
