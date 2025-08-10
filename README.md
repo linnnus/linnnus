@@ -5,12 +5,19 @@ i am linus. that's me.
 my latest commit is
 
 ```
-stirling-pdf: Switch to MIT license
+launchd+targets/darwin: Escape XML in plists
 
-https://github.com/Stirling-Tools/Stirling-PDF/commit/da6b66e19992486d100bfb48277da46ecdd63e87
+This patch updates all usage of toPlist such that it escapes any strings
+in the final output.
+
+The motication for this change is to avoid confusion when end-users of
+home-manager's APIs are not aware that the option values they set end up
+being passed un-escaped to XML files.
+
+BREAKING CHANGE: Consumers doing manual escaping will now be doubly escaped.
 ```
 
 ## Meta
 
 This README was automatically generated on `pkrvm0wrmc9nc7o` using Python
-`3.10.18` at `2025-08-09 05:41:10.169690`.
+`3.10.18` at `2025-08-10 05:43:41.535361`.
