@@ -20,4 +20,4 @@ BREAKING CHANGE: Consumers doing manual escaping will now be doubly escaped.
 ## Meta
 
 This README was automatically generated on `pkrvm0wrmc9nc7o` using Python
-`3.10.18` at `2025-08-13 05:42:07.686285`.
+`3.10.18` at `2025-08-14 05:42:02.812146`.
