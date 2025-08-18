@@ -5,19 +5,10 @@ i am linus. that's me.
 my latest commit is
 
 ```
-launchd+targets/darwin: Escape XML in plists
-
-This patch updates all usage of toPlist such that it escapes any strings
-in the final output.
-
-The motication for this change is to avoid confusion when end-users of
-home-manager's APIs are not aware that the option values they set end up
-being passed un-escaped to XML files.
-
-BREAKING CHANGE: Consumers doing manual escaping will now be doubly escaped.
+space-station-14-launcher: 0.32.1 -> 0.33.0
 ```
 
 ## Meta
 
 This README was automatically generated on `pkrvmdgpy2b27sr` using Python
-`3.10.18` at `2025-08-17 05:40:11.918208`.
+`3.10.18` at `2025-08-18 05:44:21.170432`.
