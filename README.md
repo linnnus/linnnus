@@ -5,10 +5,16 @@ i am linus. that's me.
 my latest commit is
 
 ```
-i shid an fart
+ahmed/git: Allow access from ahmed user account
+
+This is needed as I'm moving to using the Git instance hosted on ahmed
+itself as the source of truth for nix-monorepo.
+
+Hopefully this chicken-and-egg situation doesn't come back to bite me in
+the ass...
 ```
 
 ## Meta
 
 This README was automatically generated on `runnervmyfcvg` using Python
-`3.10.18` at `2025-09-21 05:36:31.480822`.
+`3.10.18` at `2025-09-22 05:37:34.878577`.
